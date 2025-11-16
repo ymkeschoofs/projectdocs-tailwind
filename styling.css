@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+.h1-large {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 16rem;
+}
+.h1-small {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 7.7rem;
+}
+
+.bbh-font {
+    font-family: "BBH Sans Bogle", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+p {
+    max-width: 65ch;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrapper i {
+    display: block;
+}
+
+#folders::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('img/stampBG.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -1;
+}
+
+ul.custom {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+ul.custom li {
+    position: relative;
+}
+
+ul.custom li::before {
+    content: "▪";
+    position: absolute;
+    left: -2rem;
+    top: -.2rem;
+    font-size: 2rem;
+    color: #cf0a2e;
+    line-height: 1;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost in Tra(i)nslation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body class="antialiased bg-[#ede8dd] overflow-x-hidden px-16">
+    <div class="relative w-screen left-1/2 transform -translate-x-1/2">
+        <div class="absolute left-0 right-0 top-0 h-[65vh] md:h-[70vh]
+                    bg-[url('img/stampBG.svg')] bg-top bg-cover 
+                    opacity-60 pointer-events-none z-0">
+        </div>
+
+        <div class="pointer-events-none absolute inset-0 z-10">
+            <i class="fa-solid fa-folder text-[#ede8dd] text-[100vw] leading-none 
+            max-h-screen absolute left-1/2 top-[25rem]
+            -translate-x-1/2 -translate-y-[50%]
+            [filter:drop-shadow(0_-50px_17px_rgba(3,2,57,0.05))]">
+            </i>
+        </div>
+        
+        <!-- Start voor inhoud-->
+        <main class="min-h-screen relative flex flex-col items-start justify-start 
+                    overflow-visible px-32 pt-20 md:pt-28 z-10">
+            <div class="w-full flex items-center justify-between mt-8 md:mt-12 mb-8 md:mb-12">
+            <div class="folders-title text-left text-5xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="2">Les 3</div>
+                <div class="flex gap-4 items-center mt-8">
+                    <a href="index.html" class="inline-flex items-center px-4 py-4 bg-[#cf0a2e] text-[#ede8dd] text-base font-medium rounded-md shadow-sm hover:bg-[#b40a20] focus:outline-none" aria-label="Terug naar index"><i class="fa-solid fa-house"></i></a>
+                    <a href="l2.html" class="inline-flex items-center px-4 py-4 bg-[#cf0a2e] text-[#ede8dd] text-base font-medium rounded-md shadow-sm hover:bg-[#b40a20] focus:outline-none" aria-label="Vorige les"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="l4.html" class="inline-flex items-center px-4 py-4 bg-[#cf0a2e] text-[#ede8dd] text-base font-medium rounded-md shadow-sm hover:bg-[#b40a20] focus:outline-none" aria-label="Volgende les"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+            <div class="quote-block relative mt-1 md:mt-2 mb-6 md:mb-8">
+                        <span aria-hidden="true" class="bbh-font absolute left-0 -translate-y-3 md:-translate-y-6 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">“</span>
+                        <p class="italic pl-8 pr-8 mb-4 text-[#06043b]">Bij les 3 heb ik het mid-fidelity prototype in Figma verder uitgewerkt, op basis van de feedback van de leerkracht. De focus lag op het verbeteren van structuur, hiërarchie en verhoudingen, en het verfijnen van kleur en typografie om de schermen duidelijker en consistenter te maken.</p>
+                        <span aria-hidden="true" class="bbh-font absolute right-0 md:-right-2 bottom-0 translate-y-3 md:translate-y-8 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">”</span>
+                    </div>                
+
+                <div class="pl-8 pr-8">
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Hoe ben ik begonnen?</div>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Aan het begin van de les kregen we voorbeelden te zien van medestudenten, waarbij werd uitgelegd wat goed werkte en wat minder. Daarna ben ik zelf feedback gaan vragen om mijn eigen werk te kunnen verbeteren. De algemene feedback was positief: het kleurgebruik en de layout werden goed onthaald. Wel kreeg ik de opmerking dat de tekst en gegevens overal wat te klein stonden. Dat heb ik dus als eerste aangepakt.</p>
+
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Stationsscherm</div>
+                    <p class="text-base leading-relaxed mb-4 pl-4">De feedback op dit scherm was vooral dat de elementen groter mochten. Nadat ik alles opschaalde, merkte ik dat het ontwerp wat krap werd. Ik ben toen op zoek gegaan naar manieren om meer witruimte en rust te creëren.</p>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Daarnaast stond de vertaling te dicht bij de bestemming. Die heb ik iets laten zakken zodat de hiërarchie duidelijker wordt.</p>
+
+                    <div class="mt-12 w-full">
+                        <div class="w-full max-w-4xl ml-4 mb-8 md:mb-12">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="w-full md:flex-[2] relative overflow-visible">
+                                    <img src="img/L3/stationScherm-L3.png" alt="Stationsscherm" loading="lazy" class="w-full h-auto max-h-[56vh] md:max-h-[64vh] object-contain rounded-lg bg-[#efeae0]" />
+                                    <img src="img/tape-1.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-1/2 md:w-1/3 pointer-events-none z-10" />
+                                </div>
+                                <div class="hidden md:block md:flex-[1]"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Perronscherm</div>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Hier was het wat moeilijker. Voor de feedbackronde had ik een nieuwe versie gemaakt waarin alleen de eerstvolgende trein zijn tussenstops toont. Zo kreeg ik de ruimte en rust terug in het ontwerp.</p>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Tijdens de feedback heb ik zowel de vorige versie als de nieuwe getoond, en de voorkeur ging duidelijk naar de nieuwste. Ook hier werd vermeld dat de tekst groter kon, en dat de vertaling wat verder naar beneden mocht. Dat heb ik intussen aangepast.</p>
+
+                    <div class="pl-4 mt-12 mb-8 md:mb-12">
+                        <div class="relative inline-block">
+                            <img src="img/L2/perronScherm-L2.png" alt="Perronscherm schets 1" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
+                            <img src="img/tape-2.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                        </div>
+                    </div>
+
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Wagonscherm</div>
+                    <p class="text-base leading-relaxed mb-4 pl-4">Door voorbeelden van andere studenten te bekijken, ontdekte ik dat ik dit deel van de opdracht verkeerd had begrepen. Ik dacht dat het scherm aan de buitenkant van de trein hing, zodat reizigers konden zien waar ze moesten wachten. Maar het scherm hoort ín de trein te staan. Ik heb mijn ontwerp daarom aangepast zodat het werkt voor in de trein.</p>
+                    <p class="text-base leading-relaxed mb-4 pl-4">Ik heb nu drie volgende haltes toegevoegd, zodat passagiers tijdig kunnen zien wanneer ze moeten uitstappen. Verder blijft de structuur gelijk aan mijn eerste ontwerp. Ook hier kreeg ik de opmerking dat de tekst groter mocht — wat ik ondertussen heb doorgevoerd.</p>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Daarnaast heb ik het stukje met de coupeletter geel gemaakt, zodat passengers meteen zien dat dat overeenkomt met het geel gemarkeerde deel in de visualisatie van de trein.</p>
+                    <ul class="list-disc ml-10 mb-6 custom">
+                        <li>Drie volgende haltes toegevoegd voor betere navigatie.</li>
+                        <li>Coupeletter gemarkeerd in geel voor directe herkenning.</li>
+                        <li>Tekstgrootte verhoogd en hiërarchie aangescherpt.</li>
+                    </ul>
+
+                    <div class="mt-12 w-full">
+                        <div class="w-full max-w-4xl ml-4 mb-8 md:mb-12">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="w-full md:flex-[2] relative overflow-visible">
+                                    <img src="img/L2/wagonScherm-L2.png" alt="Stationsscherm" loading="lazy" class="w-full h-auto max-h-[56vh] md:max-h-[64vh] object-contain rounded-lg bg-[#efeae0]" />
+                                    <img src="img/tape-1.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-1/2 md:w-1/3 pointer-events-none z-10" />
+                                </div>
+                                <div class="hidden md:block md:flex-[1]"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="3">Eindstand</div>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Ik vind dat het geheel stilaan goed samenkomt. Wat ik nog moet toevoegen, is een duidelijke weergave van wanneer een trein niet meer rijdt.</p>
+                </div>
+        </main>
+        <div class="relative w-full mt-12 h-[15vh] pointer-events-none">
+            <div class="pointer-events-none absolute inset-0 z-[-1]">
+                <i class="fa-solid fa-folder text-[#ede8dd] text-[100vw] leading-none
+                    absolute left-1/2 bottom-0
+                    -translate-x-1/2
+                    [filter:drop-shadow(0_50px_17px_rgba(3,2,57,0.05))]">
+                </i>
+            </div>
+
+        <div class="absolute left-0 right-0 bottom-0 h-[45vh]
+                    bg-[url('img/stampBG.svg')] bg-bottom bg-cover opacity-60 z-[-2]">
+        </div>
+    </div>
+</body>
+</html>
