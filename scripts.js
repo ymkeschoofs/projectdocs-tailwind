@@ -10,3 +10,14 @@
     if (first) first.focus({ preventScroll: true });
   });
 })();
+
+function openImage(src) {
+  document.getElementById("popupImg").src = src;
+  document.getElementById("imagePopup").classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeImage() {
+  document.getElementById("imagePopup").classList.add("hidden");
+  document.body.style.overflow = "auto";
+}
