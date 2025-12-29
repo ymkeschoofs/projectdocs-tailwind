@@ -6,18 +6,15 @@
     <title>Lost in Tra(i)nslation</title>
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="scripts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="dist/styling.css">  
     <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="antialiased bg-[#ede8dd] overflow-x-visible px-16">
     <div class="relative w-screen left-1/2 transform -translate-x-1/2 flex flex-col">
-
-        <div class="absolute left-0 right-0 top-0 h-[65vh] md:h-[70vh]
-                    bg-[url('img/stampBG.svg')] bg-top bg-cover 
-                    opacity-60 pointer-events-none z-0">
-        </div>
+        <div class="absolute left-0 right-0 top-0 h-[65vh] md:h-[70vh] bg-stamp opacity-60 pointer-events-none z-0"></div>
 
         <div class="pointer-events-none fixed inset-0 z-10 flex top-[12vh] justify-center">
             <img src="img/folder.svg" alt="" 
@@ -27,100 +24,103 @@
         <main class="min-h-screen relative flex flex-col items-start justify-start 
         overflow-visible px-32 pt-20 md:pt-28 z-10 mb-[25vh]">
 
-        <div class="w-full flex items-center justify-between mt-8 md:mt-12 mb-8 md:mb-12">
-            <div class="folders-title text-left text-5xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="2">Les 7</div>
+            <div class="w-full flex items-center justify-between mt-8 md:mt-12 mb-8 md:mb-12">
+                <div class="folders-title text-left text-5xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="2">Les 7</div>
 
-         <div class="flex gap-3 -mt-14">
-                <a href="index.html"
-                class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-                <a href="l6.html"
-                class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-
+                <div class="flex gap-3 -mt-14">
+                    <a href="index.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="l6.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <a href="l8.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
-        </div>
         
         <!-- Start voor inhoud-->
-
-        <div class="quote-block relative mt-1 md:mt-2 mb-6 md:mb-8">
-            <span aria-hidden="true" class="bbh-font absolute left-0 -translate-y-3 md:-translate-y-6 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">“</span>
-            <p class="italic pl-8 pr-8 mb-4 text-[#06043b]">Deze keer moesten we in Figma de drie bestaande schermen omzetten naar drie mobiele schermen. En hebben we weer verder gewerkt aan onze website.</p>
-            <span aria-hidden="true" class="bbh-font absolute right-0 md:-right-2 bottom-0 translate-y-3 md:translate-y-8 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">”</span>
-        </div> 
+            <div class="quote-block relative mt-1 md:mt-2 mb-6 md:mb-8">
+                <span aria-hidden="true" class="bbh-font absolute left-0 -translate-y-3 md:-translate-y-6 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">“</span>
+                <p class="italic pl-8 pr-8 mb-4 text-[#06043b]">Deze keer moesten we in Figma de drie bestaande schermen omzetten naar drie mobiele schermen. En hebben we weer verder gewerkt aan onze website.</p>
+                <span aria-hidden="true" class="bbh-font absolute right-0 md:-right-2 bottom-0 translate-y-3 md:translate-y-8 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">”</span>
+            </div> 
         
-        <div class="pl-8 pr-8">
-            <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Hoe ben ik begonnen?</div>
-                <p class="text-base leading-relaxed mb-6 pl-4">Ik heb eerst een paar snelle schetsen gemaakt op post-its om een idee te krijgen van wat mogelijk was. Daarna heb ik gekeken hoe andere mobiele UX wordt opgebouwd. Toen ben ik in Figma gaan puzzelen wat het beste werkte en hoe alles in dezelfde stijl kon blijven.</p>
+            <div class="pl-8 pr-8">
+                <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Hoe ben ik begonnen?</div>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Ik heb eerst een paar snelle schetsen gemaakt op post-its om een idee te krijgen van wat mogelijk was. Daarna heb ik gekeken hoe andere mobiele UX wordt opgebouwd. Toen ben ik in Figma gaan puzzelen wat het beste werkte en hoe alles in dezelfde stijl kon blijven.</p>
 
-                <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Stationscherm</div>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Bovenaan kan de gebruiker een station intypen. Daarna verschijnt een kleine keuze-popup met stations die passen bij wat er is getypt. Vervolgens ziet de gebruiker welke treinen op dat station aankomen. Net zoals in het originele scherm zijn perron, eindbestemming, vertaling, treintype en vertrektijd zichtbaar.</p>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Als de gebruiker op een trein klikt, gaat hij naar het wagonscherm.</p>
-                    
-                    <div class="pl-4 mt-12 mb-8 md:mb-12">
-                        <div class="relative inline-block">
-                            <img src="img/L7/Stationscherm.png" alt="Perronscherm schets 1" onclick="openImage(this.src)" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
-                            <img src="img/tape-2.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Stationscherm</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Bovenaan kan de gebruiker een station intypen. Daarna verschijnt een kleine keuze-popup met stations die passen bij wat er is getypt. Vervolgens ziet de gebruiker welke treinen op dat station aankomen. Net zoals in het originele scherm zijn perron, eindbestemming, vertaling, treintype en vertrektijd zichtbaar.</p>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Als de gebruiker op een trein klikt, gaat hij naar het wagonscherm.</p>
+                        
+                        <div class="pl-4 mt-12 mb-8 md:mb-12">
+                            <div class="relative inline-block">
+                                <img src="img/L7/Stationscherm.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
+                                <img src="img/tape-2.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Perronscherm</div>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Op het stationsscherm staan twee knoppen: station en perron. Als de gebruiker op de perronknop klikt, ziet hij welke treinen er bij perron 1 aankomen. Wil hij een ander perron zien, dan kan hij onder de knop een nummer kiezen. Er komt dan een klein pop-up scherm met alle beschikbare perronnummers van dat station.</p>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Ook hier: als er op een trein wordt geklikt, gaat het naar het wagonscherm.</p>
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Perronscherm</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Op het stationsscherm staan twee knoppen: station en perron. Als de gebruiker op de perronknop klikt, ziet hij welke treinen er bij perron 1 aankomen. Wil hij een ander perron zien, dan kan hij onder de knop een nummer kiezen. Er komt dan een klein pop-up scherm met alle beschikbare perronnummers van dat station.</p>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ook hier: als er op een trein wordt geklikt, gaat het naar het wagonscherm.</p>
 
-                     <div class="pl-4 mt-12 mb-8 md:mb-12">
-                        <div class="relative inline-block">
-                            <img src="img/L7/Perronscherm.png" alt="Perronscherm schets 1" onclick="openImage(this.src)" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
-                            <img src="img/tape-3.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                        <div class="pl-4 mt-12 mb-8 md:mb-12">
+                            <div class="relative inline-block">
+                                <img src="img/L7/Perronscherm.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
+                                <img src="img/tape-3.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Wagonscherm</div>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Dit scherm is nog een work in progress. Bovenaan staat de hoofdinfo: eindbestemming en het tijdstip waarop de trein daar aankomt. Daaronder staan alle haltes die nog komen. Deze lijst wordt vanzelf bijgewerkt terwijl de trein rijdt.</p>
-                    <p class="text-base leading-relaxed mb-6 pl-4">In de les wou ik nog feedback vragen over hoe ik de wagon-iconen het best kan visualiseren.</p>
-                    
-                    <div class="pl-4 mt-12 mb-8 md:mb-12">
-                        <div class="relative inline-block">
-                            <img src="img/L7/Wagonscherm.png" onclick="openImage(this.src)" alt="Perronscherm schets 1" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
-                            <img src="img/tape-1.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Wagonscherm</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Dit scherm is nog een work in progress. Bovenaan staat de hoofdinfo: eindbestemming en het tijdstip waarop de trein daar aankomt. Daaronder staan alle haltes die nog komen. Deze lijst wordt vanzelf bijgewerkt terwijl de trein rijdt.</p>
+                        <p class="text-base leading-relaxed mb-6 pl-4">In de les wou ik nog feedback vragen over hoe ik de wagon-iconen het best kan visualiseren.</p>
+                        
+                        <div class="pl-4 mt-12 mb-8 md:mb-12">
+                            <div class="relative inline-block">
+                                <img src="img/L7/Wagonscherm.png" onclick="openMedia(this)" alt="Perronscherm schets 1" loading="lazy" class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]" />
+                                <img src="img/tape-1.svg" alt="tape" aria-hidden="true" class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="3">Eindstand</div>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Ik heb nog wat verder gewerkt aan de website, vooral aan betere code. In de les kreeg ik ook feedback om foto’s groter te tonen wanneer je erop klikt.</p>
-                    <p class="text-base leading-relaxed mb-6 pl-4">Voor Figma sta ik goed. Alleen het wagonscherm heeft nog wat werk nodig.</p>
-                </div>       
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="3">Eindstand</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ik heb nog wat verder gewerkt aan de website, vooral aan betere code. In de les kreeg ik ook feedback om foto’s groter te tonen wanneer je erop klikt.</p>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Voor Figma sta ik goed. Alleen het wagonscherm heeft nog wat werk nodig.</p>
+                    </div>       
         </main>
    
-        <div class="pointer-events-none absolute right-0 bottom-[5vh] z-[-1] flex justify-center">
-            <img src="img/folder.svg" alt=""
-                class="w-screen block mb-16 [filter:drop-shadow(0_20px_17px_rgba(3,2,57,0.05))]" />
+       <div class="pointer-events-none absolute right-0 bottom-[5vh] z-[-1] flex justify-center">
+            <div class="pb-28 [filter:drop-shadow(0_20px_17px_rgba(3,2,57,0.05))]">
+                <img src="img/folder.svg"alt="" class="w-screen block"/>
+            </div>
         </div>
 
-        <div class="absolute left-0 right-0 bottom-0 h-[45vh]
-                    bg-[url('img/stampBG.svg')] bg-bottom bg-cover opacity-60 z-[-2]">
-        </div>
+        <div class="absolute left-0 right-0 bottom-0 h-[45vh] bg-stamp opacity-60 z-[-2]"></div>
+   
+         <footer class=" mx-16 mb-8 rounded-full bg-[#efeae0] px-16 py-8 [filter:drop-shadow(0_20px_17px_rgba(3,2,57,0.05))]">
+            <div class="flex justify-between gap-4 text-[#06043b]">
+                <div> Bekijk de code op
+                <a href="https://github.com/ymkeschoofs/projectdocs-tailwind" target="_blank" rel="noopener noreferrer"
+                    class="font-semibold hovereffect">GitHub</a>
+                </div>
+                <div class="">Made by <span class="font-semibold">Ymke Schoofs</span> 1GDM1</div>
+            </div>
+        </footer>
+   
     </div>
 
-    <div
-    id="imagePopup"
+    <div id="imagePopup"
     class="fixed inset-0 bg-black/70 hidden flex items-center justify-center z-[999]"
-    onclick="closeImage()"
-    >
+    onclick="closeImage()">
         <div class="relative inline-block max-w-[90vw] max-h-[90vh]">
-            <img
-            id="popupImg"
-            class="w-full h-auto max-h-[90vh] rounded-lg"
-            />
+            <img id="popupImg" class="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"/>
 
-            <img
-            src="img/tape-3.svg"
-            alt="tape"
-            aria-hidden="true"
-            class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-1/3 pointer-events-none z-10"
-            />
+            <img src="img/tape-3.svg" alt="tape" aria-hidden="true"
+            class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-1/3 pointer-events-none z-10"/>
         </div>
     </div>
 </body>

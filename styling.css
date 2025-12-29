@@ -74,7 +74,8 @@ ul.custom li::before {
     line-height: 1;
 }
 
-
-.test{
-    border: solid black 2px;
+.bg-stamp {
+  background-image: url("img/stampBG.svg");
+  background-position: top;
+  background-size: cover;
 }

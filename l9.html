@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost in Tra(i)nslation</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="dist/styling.css">  
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mx-auto max-w-[1400px] px-16 flex flex-col bg-[#ede8dd]">
+    <div class="relative w-screen left-1/2 transform -translate-x-1/2 flex flex-col">
+        <div class="absolute left-0 right-0 top-0 h-[65vh] md:h-[70vh] bg-stamp opacity-60 pointer-events-none z-0"></div>
+
+        <div class="pointer-events-none fixed inset-0 z-10 flex top-[12vh] justify-center">
+            <img src="img/folder.svg" alt="" 
+                class="fixed w-screen -translate-y-[3vh] [filter:drop-shadow(0_-50px_17px_rgba(3,2,57,0.05))]"/>
+        </div>
+
+        <main class="min-h-screen relative flex flex-col items-start justify-start 
+        overflow-visible px-32 pt-20 md:pt-28 z-10 mb-[25vh]">
+
+            <div class="w-full flex items-center justify-between mt-8 md:mt-12 mb-8 md:mb-12">
+                <div class="folders-title text-left text-5xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="2">Les 9</div>
+
+                <div class="flex gap-3 -mt-14">
+                    <a href="index.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="l8.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <a href="l10.html"
+                    class="w-12 h-12 flex items-center justify-center bg-[#cf0a2e] text-[#ede8dd] rounded-md hover:bg-[#b40a20]">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        
+        <!-- Start voor inhoud-->
+            <div class="quote-block relative mt-1 md:mt-2 mb-6 md:mb-8">
+                <span aria-hidden="true" class="bbh-font absolute left-0 -translate-y-3 md:-translate-y-6 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">“</span>
+                <p class="italic pl-8 pr-8 mb-4 text-[#06043b]">Hetzelfde als vorige week: er zijn websites getoond met feedback en ik ben verder gaan zoeken in Figma voor mijn mobiele schermen.</p>
+                <span aria-hidden="true" class="bbh-font absolute right-0 md:-right-2 bottom-0 translate-y-3 md:translate-y-8 text-4xl md:text-7xl font-bold tracking-[0.12em] text-[#cf0a2e] leading-none pointer-events-none">”</span>
+            </div> 
+        
+            <div class="pl-8 pr-8">
+                <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Hoe ben ik begonnen?</div>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Deze week heb ik niets veranderd aan mijn website, omdat ik vrij tevreden ben over de layout. Voor de mobiele schermen ben ik verder gegaan met het uitwerken van het wagonscherm. Ik wilde dat dit groter in beeld was, maar zonder te veel ruimte in te nemen, en dat het snel en goed leesbaar blijft.</p>
+                    <p class="text-base leading-relaxed mb-6 pl-4">Daarnaast wilde ik dat er echte routes in de app zouden zitten, dus heb ik deze verwerkt in de verschillende schermen. Ook heb ik extra schermen toegevoegd, zoals een homescreen, een profielscherm en een ticketscherm. Verder wilde ik laten zien hoe de app met verschillende talen zou kunnen werken, daarom heb ik een werkende Franse versie gemaakt.</p>
+
+                    <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Wagonscherm</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ik heb de trein groter weergegeven en deze is nu scrollbaar van links naar rechts. Wanneer de gebruiker door de verschillende coupés scrolt, kan hij of zij zien hoe vol een coupé is en welke voorzieningen aanwezig zijn. Omdat dit wel wat ruimte inneemt, heb ik besloten er een dropdown van te maken. De gebruiker kan via een “extra info”-knop de coupés bekijken.</p>
+                    
+                        <div class="pl-4 mt-12 mb-8 md:mb-12">
+                            <video
+                            src="img/L9/wagonschermvid.mp4"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            onclick="openMedia(this)"
+                            class="cursor-pointer block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"
+                            ></video>
+                        </div>
+
+
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Extra schermen</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ik heb een homescherm, een profielscherm, een ticketscherm en een login-/aanmeldscherm toegevoegd. Hierdoor lijkt het echt een werkende app. Ik heb hierbij dezelfde styling gebruikt, zodat alles één geheel vormt.</p>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ik heb er bewust voor gekozen om de meeste functies op deze schermen niet werkend te maken; ze zijn puur decoratief en sfeerbepalend om het prototype als een echte app te laten aanvoelen. Op het homescreen kan de gebruiker wel snel naar het stationsscherm navigeren (deze knop werkt), en in het profielscherm kan de taal worden aangepast. Er zijn vier opties (NL, FR, DE, EN), maar alleen NL en FR werken. Anders zou het te veel werk zijn om alles te vertalen.</p>
+
+                        <div class="pl-4 mt-12 mb-8 md:mb-12 flex gap-x-6">
+                        <div class="relative inline-block">
+                            <img src="img/L9/M-Login.png" alt="Perronscherm schets 1"
+                                onclick="openMedia(this)" loading="lazy"
+                                class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"/>
+                            <img src="img/tape-2.svg" alt="tape" aria-hidden="true"
+                                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10"/>
+                        </div>
+
+                        <div class="relative inline-block">
+                            <img src="img/L9/M-Signup.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy"
+                                class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"/>
+                            <img src="img/tape-1.svg" alt="tape" aria-hidden="true"
+                                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10"/>
+                        </div>
+
+                        <div class="relative inline-block">
+                            <img src="img/L9/M-Profile.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy"
+                                class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"/>
+                            <img src="img/tape-3.svg" alt="tape" aria-hidden="true"
+                                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10"/>
+                        </div>
+
+                        <div class="relative inline-block">
+                            <img src="img/L9/MHome.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy"
+                                class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"/>
+                            <img src="img/tape-1.svg" alt="tape" aria-hidden="true"
+                                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10"/>
+                        </div>
+
+                        <div class="relative inline-block">
+                            <img src="img/L9/M-Tickets.png" alt="Perronscherm schets 1" onclick="openMedia(this)" loading="lazy"
+                                class="block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"/>
+                            <img src="img/tape-2.svg" alt="tape" aria-hidden="true"
+                                class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/2 pointer-events-none z-10"/>
+                        </div>
+                    </div>
+
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#06043b] bbh-font" role="heading" aria-level="3">Vertalingen</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Ik wilde laten zien hoe de app zou werken als de gebruiker een andere taal kiest, daarom heb ik een Franse versie gemaakt. Alle schermen zijn vertaald, inclusief de treinroutes. Bij het maken van de routes heeft ChatGPT geholpen door zo realistisch mogelijk routes te creëren voor de Nederlandse versie en deze vervolgens te vertalen naar het Frans.</p>
+
+                        <div class="folders-title mb-4 text-left text-xl md:text-3xl font-bold tracking-[0.12em] text-[#cf0a2e] bbh-font" role="heading" aria-level="3">Eindstand</div>
+                        <p class="text-base leading-relaxed mb-6 pl-4">Volgende les vraag ik feedback op mijn mobiele schermen, maar de app is bijna helemaal af!</p>
+                    </div>       
+        </main>
+   
+        <div class="pointer-events-none absolute right-0 bottom-[5vh] z-[-1] flex justify-center">
+            <div class="pb-28 [filter:drop-shadow(0_20px_17px_rgba(3,2,57,0.05))]">
+                <img src="img/folder.svg"alt="" class="w-screen block"/>
+            </div>
+        </div>
+
+        <div class="absolute left-0 right-0 bottom-0 h-[45vh] bg-stamp opacity-60 z-[-2]"></div>
+    
+          <footer class=" mx-16 mb-8 rounded-full bg-[#efeae0] px-16 py-8 [filter:drop-shadow(0_20px_17px_rgba(3,2,57,0.05))]">
+            <div class="flex justify-between gap-4 text-[#06043b]">
+                <div> Bekijk de code op
+                <a href="https://github.com/ymkeschoofs/projectdocs-tailwind" target="_blank" rel="noopener noreferrer"
+                    class="font-semibold hovereffect">GitHub</a>
+                </div>
+                <div class="">Made by <span class="font-semibold">Ymke Schoofs</span> 1GDM1</div>
+            </div>
+        </footer>
+    
+    </div>
+
+    <div id="imagePopup"
+    class="fixed inset-0 bg-black/70 hidden flex items-center justify-center z-[999]"
+    onclick="closeImage()">
+        <div class="relative inline-block max-w-[90vw] max-h-[90vh]">
+            <img id="popupImg" class="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"/>
+            
+            <video id="popupVideo" class="hidden max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"
+                controls playsinline></video>
+
+            <img src="img/tape-3.svg" alt="tape" aria-hidden="true"
+            class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-1/3 pointer-events-none z-10"/>
+        </div>
+    </div>
+</body>
+</html>
