@@ -59,15 +59,13 @@
                         <p class="text-base leading-relaxed mb-6 pl-4">Ik heb de trein groter weergegeven en deze is nu scrollbaar van links naar rechts. Wanneer de gebruiker door de verschillende coupés scrolt, kan hij of zij zien hoe vol een coupé is en welke voorzieningen aanwezig zijn. Omdat dit wel wat ruimte inneemt, heb ik besloten er een dropdown van te maken. De gebruiker kan via een “extra info”-knop de coupés bekijken.</p>
                     
                         <div class="pl-4 mt-12 mb-8 md:mb-12">
-                            <video
-                            src="img/L9/wagonschermvid.mp4"
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            onclick="openMedia(this)"
-                            class="cursor-pointer block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"
-                            ></video>
+                            <div class="relative inline-block">
+                                <video src="img/L9/wagonschermvid.mp4" autoplay muted loop playsinline onclick="openMedia(this)"
+                                    class="cursor-pointer block w-auto max-w-full object-contain rounded-lg max-h-[45vh]"></video>
+
+                                <img src="img/tape-3.svg" alt="tape" aria-hidden="true"
+                                    class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-3/4 md:w-1/3 pointer-events-none z-10"/>
+                            </div>
                         </div>
 
 
